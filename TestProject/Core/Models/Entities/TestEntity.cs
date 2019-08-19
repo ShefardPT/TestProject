@@ -10,7 +10,7 @@ namespace TestProject.Core.Models.Entities
     {
         public TestEntity() : base()
         {
-            
+
         }
 
         public TestEntity
@@ -20,5 +20,6 @@ namespace TestProject.Core.Models.Entities
         }
 
         public DateTime Date { get; set; }
+        public bool? IsTrue { get; set; }
     }
 }
