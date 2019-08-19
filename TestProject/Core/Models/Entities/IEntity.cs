@@ -8,7 +8,13 @@ namespace TestProject.Core.Models.Entities
 {
     public abstract class IEntity
     {
+        public IEntity()
+        {
+            DateCreated = DateTime.Now;
+        }
+
         [Key]
         public Guid Id { get; set; }
+        public DateTime DateCreated { get; set; }
     }
 }
